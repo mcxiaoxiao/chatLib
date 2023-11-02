@@ -50,7 +50,7 @@ pip install lark chromadb openai langchain
 py search.py
 ```
 
-2️⃣ SpringBoot后端(改为自己的数据库地址，默认postgreSQL，可以导入pg.db到你的数据库)
+2️⃣ SpringBoot后端(改为自己的数据库地址，默认postgreSQL，可以导入pg.sql到你的数据库)
 ```bash
 cd spring
 确认你已经安装了Java和Maven，因为Spring Boot需要这些工具。
