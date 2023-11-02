@@ -26,7 +26,7 @@ Students of [@HRBUST](hrbust.edu.cn). :school:
 
 睿心图书管理系统-LLM辅助检索的图书管理系统
 站在💩⛰️之巅俯瞰平庸的沟壑
-功能也许包括但不限于 借书还书 账号信息管理 登录退出 历史记录 导入csv 欣赏壮观的shitcode 和令人震惊😨的实现方案
+功能也许包括但不限于 借书还书 账号信息管理 登录退出 历史记录 导入csv 欣赏令人叹为观止的两个后端和前端的shitcode 和令人震惊😨的实现方案
 <p>🎦</p>
 
  ![demo](https://github.com/mcxiaoxiao/chatLib/blob/main/readmeimg/demo.gif)
