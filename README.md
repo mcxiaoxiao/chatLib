@@ -1,8 +1,29 @@
-# chatLib📕
- java+python+springboot+langchain+react实现的LLM辅助检索的图书管理系统。
- 包括借阅、历史记录、用户登录、个人信息功能。
- 😏用到的框架挺多，可以基于此快速完成好多类型的作业！！！
 
+<div align=center>
+
+# 📕 ChatLib 
+ 
+java+python+springboot+langchain+react实现的LLM辅助检索的图书管理系统。
+ 😏用到的框架挺多，可以基于此快速完成好多类型的作业！！！</br>
+
+## Introduction :raised_hands:
+
+Student of [@UESTC](https://github.com/uestcer). :school:
+
+Major in Software Engineering. :man_technologist:
+
+I love open source spirit. :heart:
+
+Hope to make more friends in open source projects. :eyes:
+
+## Orientation :dart:
+
+I love coding. :heart:
+
+I love Front End technologys. :heart:
+
+<p>
+</div>
  ## 三步安装
 
 0️⃣ 前端，基于vite&react
