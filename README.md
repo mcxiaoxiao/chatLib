@@ -26,10 +26,15 @@ Students of [@HRBUST](hrbust.edu.cn). :school:
 
 睿心图书管理系统-LLM辅助检索的图书管理系统:heart:
 可以基于此魔改一顿快速完成好多类型的作业:eyes:</br>
-💩⛰️级项目，技术含量不高。有需要的同学可作为厕所读物学习😘
+出神入化的殿堂级💩⛰️项目，技术含量不高。有需要的同学可作为厕所读物学习😘
+<p>🎦</p>
+
+ ![demo](https://github.com/mcxiaoxiao/chatLib/blob/main/readmeimg/demo.gif)
 
 </div>
- ## 三步安装
+ 
+ 
+# 三步安装
 
 0️⃣ 前端，基于vite&react(Home页改成自己的请求ip:port)
 
@@ -56,8 +61,8 @@ cd spring
 确认你已经安装了Java和Maven，因为Spring Boot需要这些工具。
 可以使用IntelliJ IDEA等工具来修改/运行项目
 ```
+# LLM检索示例
 
- 
 🔍多语言搜索示例：
  ![a](https://github.com/mcxiaoxiao/chatLib/blob/main/readmeimg/a.png)
  🔍LLM分析元数据及近似指代示例：
@@ -158,3 +163,6 @@ Langchain为我们提供了这样的方法，使用SelfQueryRetriever，它使�
 例如，对于经济政治类图书，我们可以将它们的文本转换为嵌入向量，并在向量数据库中进行存储和检索。当用户搜索与经济政治相关的图书时，我们可以使用嵌入向量来计算与用户查询最相似的图书，并将这些图书返回给用户。同样地，对于其他类别的图书，如java python、电气 机械、互联网 ict、文学 艺术和人物 历史，我们也可以使用嵌入向量来实现近似度高的检索。
 
 ![5](https://github.com/mcxiaoxiao/chatLib/blob/main/readmeimg/5.png)
+# 数据库设计 
+详见[pg.sql](https://github.com/mcxiaoxiao/chatLib/blob/main/pg.sql/)
+![er](https://github.com/mcxiaoxiao/chatLib/blob/main/readmeimg/er.png)
