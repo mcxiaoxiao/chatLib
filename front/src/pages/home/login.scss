@@ -1,0 +1,105 @@
+.login-container {
+  height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/src/assets/bac.png');
+  background-size: cover;
+  background-position: center;
+  gap: 10rem;
+  margin-left:-1vw;
+  margin-right:-1vw;
+  margin-top:-1vh;
+}
+
+.login-floating {
+  height: 51vh;
+  width: 68.3vh;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8 14px;
+  box-shadow: black;
+  animation: fade-in 0.4s ease-in-out;
+  width: 380px;
+  height: 454px;
+  opacity: 0.8;
+  margin-left: 110px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8 14px;
+  box-shadow: black;
+  animation: fade-in 0.4s ease-in-out;
+  width: 380px;
+  height: 600px;
+  opacity: 0.8;
+  margin-left: 110px;
+}
+
+.login-form .MuiTextField-root {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.login-form .MuiButton-root {
+  margin-top: 10px;
+}
+
+.login-title {
+  margin-top: 20px;
+  margin-bottom: 35px !important;
+  color: black;
+  font-weight: 700 !important;
+}
+
+.login-input {
+  width: 350px !important;
+  margin-top: 15px !important;
+  display: flex;
+}
+
+.login-button {
+  width: 350px !important;
+  display: flex;
+}
+
+.login-button-small {
+  margin-top: 30px !important;
+  width: 150px !important;
+  display: flex;
+}
+
+.login-info {
+  display: flex;
+  gap: 0.2rem;
+  color: rgba(#000, 0.45);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

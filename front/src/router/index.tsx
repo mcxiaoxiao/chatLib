@@ -13,12 +13,13 @@ import {createBrowserRouter} from "react-router-dom"
 const router = createBrowserRouter([
   {
     path:'/',
+    element:<Home/>,
+    children:[]
+  },
+  {
+    path:'/',
     element:<MenuLayout/>,
     children:[
-      {
-        path:'/',
-        element:<Home/>
-      },
       {
         path:'/book',
         element:<Book/>

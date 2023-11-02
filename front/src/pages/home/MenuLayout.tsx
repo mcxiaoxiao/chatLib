@@ -14,11 +14,12 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import { RecoilRoot } from 'recoil';
 import {useState,FC} from 'react';
 
-
+import {userID} from '../../recoil/store'
+import { useRecoilState } from 'recoil';
 
 
 const MenuLayout: React.FC = () => {
-
+  const [ID, setID] = useRecoilState(userID);
   const nav = useNavigate()
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -69,6 +70,13 @@ const MenuLayout: React.FC = () => {
     getItem('个人信息', '5', <UserOutlined />,nav5),
   ];
 
+  const items2: MenuItem[] = [
+    getItem('书籍一览', '1', <ReadOutlined />,nav1),
+    getItem('借阅情况', '2', <CalendarOutlined />,nav2),
+    getItem('历史记录', '3', <LaptopOutlined />,nav3),
+    getItem('个人信息', '5', <UserOutlined />,nav5),
+  ];
+
 
   const {
     token: { colorBgContainer },
@@ -79,8 +87,11 @@ const MenuLayout: React.FC = () => {
       <Header style={{ display: 'flex', alignItems: 'center',fontSize:20,color:'white' }}>
       <BookOutlined /> 
       <span style={{marginLeft:'1vw'}}>
-      图书管理系统
+      睿心图书管理系统
       </span>
+
+      {(ID===10010)&&(<span style={{marginLeft:'70vw'}} >你好，郭子铭</span>)}
+      {(ID===10086)&&(<span style={{marginLeft:'70vw'}} >你好，王光耀</span>)}
       </Header>
 
       <Content style={{ padding: '0 25px' }}>
@@ -99,14 +110,23 @@ const MenuLayout: React.FC = () => {
         <Layout style={{ padding: '24px 0', background: colorBgContainer }}>
           <Sider style={{ background: colorBgContainer }} width={200}>
 
-            
-            <Menu
+            {(ID===10086)&&(            <Menu
               mode="inline"
               defaultSelectedKeys={['0']}
               defaultOpenKeys={['0']}
               style={{ height: '100%' }}
               items={items}
-            />
+            />)}
+
+{(ID===10010)&&(            <Menu
+              mode="inline"
+              defaultSelectedKeys={['0']}
+              defaultOpenKeys={['0']}
+              style={{ height: '100%' }}
+              items={items2}
+            />)}
+
+
           </Sider>
 
 
