@@ -1,0 +1,120 @@
+
+type BookEntity{
+    bookid:Int
+    author:String
+    level:Int
+    type:String
+    borrowed:Boolean
+    isbn:String
+    libid:Int
+    name:String
+    price:Float
+    publisher:String
+    libname:String
+    content:String
+}
+
+
+type HistoryEntity{
+    bookid:Int
+    readerid:Int
+    type:String
+    bookname:String
+    readername:String
+    time:String
+}
+
+type ReaderEntity{
+    readername:String
+    readersex:String
+    email:String
+    admin:String
+    password:String
+    role:Int
+}
+
+type TakeEntity{
+    takeid:Int
+    bookid:Int
+    readerid:Int
+    borrowedtime:Int
+    borrowedddl:String
+    borroweddate:String
+}
+
+
+type PagesHistoryEntity{
+    list:[HistoryEntity!]
+    totalCount:Int
+}
+
+type PagesBookEntity{
+    list:[BookEntity!]
+    totalCount:Int
+}
+
+type PagesTakeEntity{
+    list:[TakeEntity]
+    totalCount:Int
+}
+
+type Date
+{
+    year:Int
+    month:Int
+    day:Int
+}
+
+input ReaderEntityInput{
+    readername:String
+    readersex:String
+    readertype:String
+    email:String
+    admin:String
+    password:String
+    role:Int
+}
+
+
+
+
+input BookEntityInput{
+    bookid:Int
+    author:String
+    level:Int
+    type:String
+    borrowed:Boolean
+    isbn:String
+    libid:Int
+    name:String
+    price:Float
+    publisher:String
+    libname:String
+    content:String
+}
+
+
+type Query {
+    findBookById(id:Int):BookEntity!
+    findBookAll(pageNumber:Int,pageSize:Int):PagesBookEntity!
+
+    findTakeById(readerid:Int):PagesTakeEntity
+    findTakeAll(pageNumber:Int,pageSize:Int):PagesTakeEntity
+
+    findReaderById(readerid:Int):ReaderEntity
+    findHistoryAll(pageNumber:Int,pageSize:Int):PagesHistoryEntity!
+}
+
+type Mutation {
+    addBook(book:BookEntityInput):BookEntity!
+    addReader(reader:ReaderEntityInput):ReaderEntity!
+    deleteBook(id:Int):BookEntity!
+
+    borrow(bookid:Int,readerid:Int,borrowtime:Int):TakeEntity!
+    back(takeid:Int):TakeEntity!
+    renew(takeid:Int,borrowtime:Int):TakeEntity!
+}
+
+
+
+

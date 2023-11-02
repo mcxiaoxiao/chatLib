@@ -1,0 +1,4 @@
+Flask==2.2.2
+Flask_Cors==4.0.0
+langchain==0.0.325
+openai==0.28.1
