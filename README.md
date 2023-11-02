@@ -24,9 +24,8 @@ Students of [@HRBUST](hrbust.edu.cn). :school:
 
 
 
-睿心图书管理系统-LLM辅助检索的图书管理系统:heart:
-可以基于此魔改一顿快速完成好多类型的作业:eyes:</br>
-出神入化的殿堂级💩⛰️项目，技术含量不高。有需要的同学可作为厕所读物学习😘
+睿心图书管理系统-LLM辅助检索的图书管理系统
+站在💩⛰️之巅俯瞰平庸的沟壑
 <p>🎦</p>
 
  ![demo](https://github.com/mcxiaoxiao/chatLib/blob/main/readmeimg/demo.gif)
