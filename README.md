@@ -83,6 +83,7 @@ cd spring
 最大边际相关性(MMR)在论文：《The Use of MMR, Diversity-Based Reranking for Reordering Documents and Production Summaries》中有详细的介绍，MMR尝试减少结果的冗余，同时保持结果与查询条件相关性和多样性的平衡，作者在论文中提出了如下的公式：
 其中，最大边际相关性算法可以实现在保持关联性的同时，减小排序结果的冗余。是在信息检索和文本摘要等任务中使用的策略，用于权衡信息的相关性和多样性。其基本思想是选择那些与查询或者主题最相关，但与已选择内容最不相似的项。
 在文本摘要的场景中，MMR可以帮助我们生成更好的摘要。比如在抽取式摘要中，我们可以使用MMR来选择句子，以确保选出的句子既与文档主题相关，又尽可能地包含不同的信息。这样可以避免摘要中包含重复或者冗余的内容，从而提高摘要的信息密度和阅读体验。
+
 [The Use of MMR, Diversity-Based Reranking for Reordering Documents and Production Summaries](https://www.cs.cmu.edu/~jgc/publication/The_Use_MMR_Diversity_Based_LTMIR_1998.pdf)
 
 
@@ -170,12 +171,14 @@ Chroma作为一个数据库工具，提供了嵌入向量的存储和检索功�
 ![4](https://github.com/mcxiaoxiao/chatLib/blob/main/readmeimg/4.png)
 同时，Chroma与其他组件如LLM和MMR紧密联系在一起。LLM通过构建查询的语言模型链，将用户的原始问题转化为结构化查询，并应用于Chroma向量数据库进行搜索。MMR策略则用于重新排序文档和生成摘要，以提供更准确、相关且多样化的搜索结果。这些组件共同作用，使得搜索引擎系统能够通过使用嵌入向量和Chroma数据库进行高效的存储、检索和排序，从而提供优质的搜索体验。
 综上所述，嵌入向量在我们的AI图书搜索引擎项目中发挥了重要作用，而Chroma作为一个嵌入向量的数据库工具，则与LLM、MMR等组件紧密联系在一起，共同构建了一个高效、准确、相关且多样化的图书搜索引擎系统。
+
 - [🦜️🔗 LangChain](https://python.langchain.com/)
 # 4. 🦜️🔗Langchain
 Langchain用于从用户原始问题中提取信息并生成查询字符串和过滤器。在项目中，使用Langchain的SelfQueryRetriever来实现这一功能。SelfQueryRetriever使用LLM链来构建查询，并从用户查询中提取出用于向量搜索的查询字符串和用于过滤元数据的信息。
 Langchain为我们提供了这样的方法，使用SelfQueryRetriever，它使用LLM从用户原始问题中抽取：
 •	用于向量搜索的查询字符串(search term)
 •	用于过滤元数据的信息(Filter)
+
 -[🏡 Home Chroma](https://docs.trychroma.com/)
 # 5. 👾Embedding
 嵌入（embedding）是一种将文本或其他数据类型转换为连续向量表示的技术。在自然语言处理中，嵌入的目标是捕捉数据的语义信息，使得相似的数据在向量空间中距离更近。通过将文本转换为嵌入向量，我们可以将语义信息编码为向量的特征，并在向量空间中进行计算和比较。
