@@ -17,7 +17,7 @@
 ![Static Badge](https://img.shields.io/badge/Langchain-red)
 
 Students of [@HRBUST](hrbust.edu.cn). :school:
-:man_technologist:[@GoldGhastTears](https://github.com/GoldGhastTears).[@mcxiaoxiao](https://github.com/mcxiaoxiao).
+:man_technologist:[@GoldGhastTears](https://github.com/GoldGhastTears).[@mcxiaoxiao](https://github.com/mcxiaoxiao).@[xianggeng0](https://github.com/xianggeng0)
 
 ## Introduction :raised_hands:
 
