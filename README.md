@@ -3,30 +3,35 @@
 
 # 📕 ChatLib 
  
-java+python+springboot+langchain+react实现的LLM辅助检索的图书管理系统。
- 😏用到的框架挺多，可以基于此快速完成好多类型的作业！！！</br>
+![GitHub language count](https://img.shields.io/github/languages/count/mcxiaoxiao/chatLib)
+![GitHub contributors](https://img.shields.io/github/contributors/mcxiaoxiao/chatLib)
+![GitHub Repo stars](https://img.shields.io/github/stars/mcxiaoxiao/chatLib)
+</br>
+![Static Badge](https://img.shields.io/badge/Python-blue)
+![Static Badge](https://img.shields.io/badge/Java-yellow)
+![Static Badge](https://img.shields.io/badge/Graphql-purple)
+![Static Badge](https://img.shields.io/badge/Typescript-blue)
+![Static Badge](https://img.shields.io/badge/SpringBoot-green)
+![Static Badge](https://img.shields.io/badge/React-blue)
+![Static Badge](https://img.shields.io/badge/NodeJs-green)
+![Static Badge](https://img.shields.io/badge/Langchain-red)
+
+Students of [@HRBUST](hrbust.edu.cn). :school:
+:man_technologist:[@GoldGhastTears](https://github.com/GoldGhastTears).[@mcxiaoxiao](https://github.com/mcxiaoxiao).
 
 ## Introduction :raised_hands:
 
-Student of [@UESTC](https://github.com/uestcer). :school:
 
-Major in Software Engineering. :man_technologist:
 
-I love open source spirit. :heart:
 
-Hope to make more friends in open source projects. :eyes:
+LLM辅助检索的图书管理系统:heart:
+可以基于此魔改一顿快速完成好多类型的作业:eyes:</br>
+入门级项目，技术含量不高。有需要的同学可作为厕所读物学习😘
 
-## Orientation :dart:
-
-I love coding. :heart:
-
-I love Front End technologys. :heart:
-
-<p>
 </div>
  ## 三步安装
 
-0️⃣ 前端，基于vite&react
+0️⃣ 前端，基于vite&react(Home页改成自己的请求ip:port)
 
 ```bash
 cd front
@@ -38,21 +43,20 @@ cd front
 npm install
 ```
 
-1️⃣ flask后端（修改search.py第二行os.environ["OPENAI_API_KEY"]="skxxxxxxxxxxxxx填写你的openai api key",国内注意科学上网/修改llm/修改OPENAI_API_BASE）
+1️⃣ flask后端（修改search.py第二行os.environ["OPENAI_API_KEY"]="skxxxxxxxxxxxxx填写你的openai api key",国内注意科学上网/修改llm/修改OPENAI_API_BASE，后端findbook的输出格式即data1.json的格式）
 ```bash
 cd flask
 pip install lark chromadb openai langchain
 py search.py
 ```
 
-2️⃣ SpringBoot后端
+2️⃣ SpringBoot后端(改为自己的数据库地址，默认postgreSQL，可以导入pg.db到你的数据库)
 ```bash
 cd spring
 确认你已经安装了Java和Maven，因为Spring Boot需要这些工具。
 可以使用IntelliJ IDEA等工具来修改/运行项目
 ```
-。
-Minimal dependencies are installed without extra options. You can install extra options based on the feature you need.
+
  
 🔍多语言搜索示例：
  ![a](https://github.com/mcxiaoxiao/chatLib/blob/main/readmeimg/a.png)
