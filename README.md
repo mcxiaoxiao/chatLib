@@ -21,10 +21,7 @@ Students of [@HRBUST](hrbust.edu.cn). :school:
 
 ## Introduction :raised_hands:
 
-
-
-
-大作业-睿心图书管理系统-LLM辅助检索的图书管理系统
+睿心图书管理系统-LLM辅助检索的图书管理系统
 <p>🎦</p>
 
  ![demo](https://github.com/mcxiaoxiao/chatLib/blob/main/readmeimg/demo.gif)
